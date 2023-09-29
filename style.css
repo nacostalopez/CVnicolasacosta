@@ -59,8 +59,8 @@ main {
 }
 
 .href:hover {
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 .boton:hover{
-    box-shadow: rgb(85, 144, 155);
+    box-shadow: rgb(255, 255, 255);
 }
