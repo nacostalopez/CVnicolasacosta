@@ -13,7 +13,7 @@ header {
 }
 
 .boton {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border: solid 2px #000000;
     padding: 12px 22px;
@@ -53,6 +53,8 @@ main {
 #text_contacto{
     text-align: left;
     font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, serif;
+    
 }
 .href{
     color: rgb(255, 255, 255)
@@ -63,4 +65,11 @@ main {
 }
 .boton:hover{
     box-shadow: rgb(255, 255, 255);
+}
+{
+.footer{
+    background-color: #000000;
+    padding: 25px;
+    text-align: center;
+}
 }
