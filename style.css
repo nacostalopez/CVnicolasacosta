@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color:rgb(28, 101, 153);
     padding: 12px;
     display: flex;
     justify-content: space-around;
@@ -72,10 +72,11 @@ main {
 .boton:hover{
     box-shadow: rgb(255, 255, 255);
 }
-{
+
+
 .footer{
     background-color: #000000;
     padding: 25px;
     text-align: center;
 }
-}
+
