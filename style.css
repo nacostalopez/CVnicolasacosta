@@ -4,6 +4,111 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     background-color: #ffffff;
 }
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #15395D;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #091c38;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn-menu{
+    font-size: 50px;
+    padding-right: 90px;
+    padding-top: 40px;
+    
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  
+    .nav-list li {
+      margin-right: 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+}
 
 header {
     background-color:rgb(28, 101, 153);
@@ -74,9 +179,20 @@ main {
 }
 
 
-.footer{
-    background-color: #000000;
-    padding: 25px;
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para hacer el footer responsivo */
+@media (max-width: 600px) {
+    footer {
+        position: static;
+    }
 }
 

@@ -3,15 +3,29 @@
 <head>
     <title>CV Nicolas Acosta Lopez</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        
-        <a class="boton" href="habilidades.html">Habilidades</a>
-        <a class="boton" href="experiencia_laboral.html">Experiencia laboral</a>
-        <a class="boton" href="educación.html">Educacion</a>
-        <a href="contacto.html" class="boton" >Datos de contacto</a>
-    </header>
+    
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="capa"></div>   
+            <input type="checkbox" id="btn-menu">
+            <div class="container-menu">
+                <div class="cont-menu">
+                    <nav>
+                        <a href="index.html">Pagina Principal</a>
+                        <a href="formacion.html">Formacion</a>
+                        <a href="experiencia_laboral.html">Experiencia Laboral</a>
+                        <a href="contacto.html">Datos de contacto</a>
+                        <a href="habilidades.html">Habilidades</a>
+                    </nav>
+                    <label class="btn-cruz" for="btn-menu">✖️</label>
+                </div>
+            </div> 
+
     
     <main>
         <div class="cuadro">
@@ -22,5 +36,9 @@
             </p>
         </div>
     </main>
+    <footer>
+        <p>Contador de Visitas: <span id="contadorVisitas">0</span></p>
+    </footer>
+
 </body>
 </html>
